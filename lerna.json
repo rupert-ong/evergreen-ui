@@ -1,0 +1,27 @@
+{
+  "packages": ["packages/*/*"],
+  "version": "independent",
+  "hoist": true,
+  "stream": true,
+  "command": {
+    "publish": {
+      "conventionalCommits": true,
+      "ignoreChanges": [
+        "**/*.md",
+        "**/docs/*",
+        "**/*.stories.*",
+        "**/*.config.*",
+        "**/*.test.*",
+        "**/*.spec.*"
+      ],
+      "registry": "https://registry.npmjs.org"
+    },
+    "version": {
+      "conventionalCommits": true,
+      "message": "chore(release): publish"
+    }
+  },
+  "bootstrap": {
+    "npmClientArgs": ["--no-package-lock"]
+  }
+}
