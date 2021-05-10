@@ -19,7 +19,7 @@
     "prepublish": "npm run init",
     "publish": "lerna publish",
     "postpublish": "lerna publish from-package",
-    "publish:ci": "lerna publish -- --yes",
+    "publish:ci": "lerna publish --yes",
     "postpublish:ci": "lerna publish from-package --yes",
     "prepare": "husky install"
   },
