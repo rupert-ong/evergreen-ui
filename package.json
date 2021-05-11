@@ -6,6 +6,7 @@
   "main": "index.js",
   "scripts": {
     "init": "npm run bootstrap && npm run build",
+    "postinstall": "npm run init",
     "build": "lerna run build",
     "test": "jest --coverage",
     "test:ci": "npm run test -- --maxWorkers=4",
@@ -19,6 +20,7 @@
     "prepublish": "npm run init",
     "publish": "lerna publish",
     "postpublish": "lerna publish from-package",
+    "prepublish:ci": "npm run init",
     "publish:ci": "lerna publish --yes",
     "postpublish:ci": "lerna publish from-package --yes",
     "prepare": "husky install"
