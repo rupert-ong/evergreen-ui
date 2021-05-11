@@ -1,17 +1,17 @@
 const baseConfig = require('./jest.config.base');
 
-const generatePackageJestConfig = (packageName) => ({
+const generatePackageJestConfig = (packageName, moduleName = 'ui') => ({
   ...baseConfig,
-  roots: [`<rootDir>/packages/${packageName}`],
+  roots: [`<rootDir>/packages/${moduleName}/${packageName}`],
   collectCoverageFrom: [
-    `<rootDir>/packages/${packageName}/lib/**/*.{ts,tsx,js,jsx}`,
+    `<rootDir>/packages/${moduleName}/${packageName}/lib/**/*.{ts,tsx,js,jsx}`,
   ],
-  coverageDirectory: `<rootDir>/packages/${packageName}/coverage/`,
+  coverageDirectory: `<rootDir>/packages/${moduleName}/${packageName}/coverage/`,
   moduleDirectories: ['node_modules'],
-  modulePaths: [`<rootDir>/packages/${packageName}/lib/`],
+  modulePaths: [`<rootDir>/packages/${moduleName}/${packageName}/lib/`],
   name: packageName,
   displayName: packageName,
-  rootDir: '../..',
+  rootDir: '../../..',
 });
 
 module.exports = {
