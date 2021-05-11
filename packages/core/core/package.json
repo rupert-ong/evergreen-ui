@@ -1,0 +1,41 @@
+{
+  "name": "@evergreen-ui/core",
+  "version": "0.0.0",
+  "description": "Barrel export for Evergreen component library",
+  "keywords": [],
+  "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.ts",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "dist",
+    "lib"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "module-bundler"
+  },
+  "dependencies": {
+    "@evergreen-ui/core-button": "^0.0.0",
+    "@evergreen-ui/core-theme": "^0.0.0",
+    "@evergreen-ui/core-typography": "^0.0.0"
+  },
+  "devDependencies": {
+    "@evergreen-ui/module-bundler": "1.x",
+    "@material-ui/core": "^4.11.4",
+    "react": "16.x"
+  },
+  "peerDependencies": {
+    "@material-ui/core": "^4.11.4",
+    "react": "16.x"
+  }
+}
