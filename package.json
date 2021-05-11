@@ -1,8 +1,8 @@
 {
-  "name": "base",
+  "name": "evergreen-monorepo",
   "version": "1.0.0",
   "private": true,
-  "description": "Monorepo for base library. Used for testing and experimentation.",
+  "description": "Monorepo for Evergreen library",
   "main": "index.js",
   "scripts": {
     "init": "npm run bootstrap && npm run build",
