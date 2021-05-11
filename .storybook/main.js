@@ -7,6 +7,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-storysource',
+    'storybook-addon-material-ui',
   ],
   webpackFinal: async (config) => {
     // remove default css rule from storybook
