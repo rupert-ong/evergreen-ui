@@ -28,6 +28,7 @@
     "@evergreen-ui/module-bundler": "^1.0.0-alpha.1",
     "@evergreen-ui/utils-ui-testing": "^1.0.0-alpha.0",
     "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
     "react": "16.x"
   },
   "peerDependencies": {
