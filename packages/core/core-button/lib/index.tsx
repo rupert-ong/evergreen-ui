@@ -181,6 +181,13 @@ const ButtonComponent = <T extends ButtonVariants>(
   );
 };
 
+/**
+ * Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
+
+For text based buttons (`text` | `contained` | `outlined`), you can use the `label` or `children` prop for the button's display.
+
+For icon based buttons, you must specify a `children` prop.
+ */
 export const Button = forwardRef<HTMLButtonElement>(ButtonComponent) as <
   T extends ButtonVariants
 >(
