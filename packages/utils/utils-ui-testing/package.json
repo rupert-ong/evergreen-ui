@@ -5,13 +5,7 @@
   "keywords": [],
   "license": "ISC",
   "private": true,
-  "sideEffects": [
-    "*.css"
-  ],
-  "main": "dist/index.cjs.js",
-  "module": "dist/esm/index.js",
-  "src": "lib/index.tsx",
-  "types": "dist/types/index.d.ts",
+  "main": "lib/index.tsx",
   "directories": {
     "lib": "lib"
   },
