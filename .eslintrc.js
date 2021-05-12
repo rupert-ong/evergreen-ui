@@ -37,7 +37,12 @@ module.exports = {
       },
     },
     {
-      files: ['*.config.js', 'base-builder.js', 'jest.utils.js'],
+      files: [
+        '*.config.js',
+        'base-builder.js',
+        'jest.utils.js',
+        'packages/utils/module-bundler/lib/**/*.js',
+      ],
       rules: {
         'no-console': 'off',
         '@typescript-eslint/no-var-requires': 'off',
