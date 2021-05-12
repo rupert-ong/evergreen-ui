@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-ui/core",
-  "version": "0.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "Barrel export for Evergreen component library",
   "keywords": [],
   "license": "ISC",
@@ -25,12 +25,12 @@
     "build": "module-bundler"
   },
   "dependencies": {
-    "@evergreen-ui/core-button": "^0.0.0",
-    "@evergreen-ui/core-theme": "^0.0.0",
-    "@evergreen-ui/core-typography": "^0.0.0"
+    "@evergreen-ui/core-button": "^1.0.0-alpha.0",
+    "@evergreen-ui/core-theme": "^1.0.0-alpha.0",
+    "@evergreen-ui/core-typography": "^1.0.0-alpha.0"
   },
   "devDependencies": {
-    "@evergreen-ui/module-bundler": "1.x",
+    "@evergreen-ui/module-bundler": "^1.0.0-alpha.0",
     "@material-ui/core": "^4.11.4",
     "react": "16.x"
   },
