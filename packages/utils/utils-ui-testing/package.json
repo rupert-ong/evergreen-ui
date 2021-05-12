@@ -1,0 +1,30 @@
+{
+  "name": "@evergreen-ui/utils-ui-testing",
+  "version": "0.0.0",
+  "description": "Test utilities for components",
+  "keywords": [],
+  "license": "ISC",
+  "private": true,
+  "sideEffects": [
+    "*.css"
+  ],
+  "main": "dist/index.cjs.js",
+  "module": "dist/esm/index.js",
+  "src": "lib/index.tsx",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@evergreen-ui/core-theme": "^1.0.0-alpha.1",
+    "@material-ui/core": "^4.11.4",
+    "react": "16.x"
+  }
+}
