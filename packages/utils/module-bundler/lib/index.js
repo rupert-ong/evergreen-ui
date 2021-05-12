@@ -26,6 +26,7 @@ const inputOptions = {
   external: [
     ...Object.keys(devDependencies),
     ...Object.keys(peerDependencies),
+    /@babel\/runtime/,
     'tslib',
   ],
   plugins: [
