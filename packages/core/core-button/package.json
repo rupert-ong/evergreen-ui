@@ -4,6 +4,9 @@
   "description": "Core button for Evergreen component library",
   "keywords": [],
   "license": "ISC",
+  "sideEffects": [
+    "*.css"
+  ],
   "main": "dist/index.cjs.js",
   "module": "dist/esm/index.js",
   "src": "lib/index.tsx",
@@ -23,16 +26,18 @@
   },
   "devDependencies": {
     "@evergreen-ui/module-bundler": "^1.0.0-alpha.0",
+    "@evergreen-ui/core-theme": "^1.0.0-alpha.0",
+    "@evergreen-ui/core-typography": "^1.0.0-alpha.0",
     "@material-ui/core": "^4.11.4",
     "react": "16.x"
   },
   "peerDependencies": {
+    "@evergreen-ui/core-theme": "^1.0.0-alpha.0",
+    "@evergreen-ui/core-typography": "^1.0.0-alpha.0",
     "@material-ui/core": "^4.11.4",
     "react": "16.x"
   },
   "dependencies": {
-    "@evergreen-ui/core-theme": "^1.0.0-alpha.0",
-    "@evergreen-ui/core-typography": "^1.0.0-alpha.0",
     "clsx": "^1.1.1"
   }
 }
