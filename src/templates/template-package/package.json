@@ -26,6 +26,7 @@
   },
   "devDependencies": {
     "@evergreen-ui/module-bundler": "1.x",
+    "@evergreen-ui/utils-ui-testing": "1.x",
     "@material-ui/core": "^4.11.4",
     "react": "16.x"
   },
