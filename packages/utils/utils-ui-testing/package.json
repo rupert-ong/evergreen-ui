@@ -1,6 +1,6 @@
 {
   "name": "@evergreen-ui/utils-ui-testing",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0-alpha.2",
   "description": "Test utilities for components",
   "keywords": [],
   "license": "ISC",
@@ -17,7 +17,7 @@
     "access": "public"
   },
   "devDependencies": {
-    "@evergreen-ui/core-theme": "^1.0.0-alpha.1",
+    "@evergreen-ui/core-theme": "^1.0.0-alpha.2",
     "@material-ui/core": "^4.11.4",
     "react": "16.x"
   }
