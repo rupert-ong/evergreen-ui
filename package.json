@@ -5,8 +5,7 @@
   "description": "Monorepo for Evergreen library",
   "main": "index.js",
   "scripts": {
-    "init": "npm run bootstrap && npm run build",
-    "postinstall": "npm run init",
+    "postinstall": "npm run bootstrap && npm run build",
     "build": "lerna run build",
     "test": "jest --coverage",
     "test:ci": "npm run test -- --maxWorkers=4",
@@ -17,10 +16,10 @@
     "format": "prettier --write \"./packages/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
     "deploy": "npm run build-storybook && gh-pages -d storybook-static",
     "bootstrap": "lerna bootstrap --hoist",
-    "prepublish": "npm run init",
+    "prepublish": "npm run postinstall",
     "publish": "lerna publish",
     "postpublish": "lerna publish from-package",
-    "prepublish:ci": "npm run init",
+    "prepublish:ci": "npm run postinstall",
     "publish:ci": "lerna publish --yes",
     "postpublish:ci": "lerna publish from-package --yes",
     "prepare": "husky install"
