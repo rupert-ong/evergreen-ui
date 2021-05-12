@@ -41,7 +41,7 @@ module.exports = {
         '*.config.js',
         'base-builder.js',
         'jest.utils.js',
-        'packages/utils/module-bundler/lib/**/*.js',
+        'packages/utils/utils-build-module-bundler/lib/**/*.js',
       ],
       rules: {
         'no-console': 'off',
